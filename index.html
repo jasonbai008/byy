@@ -72,6 +72,10 @@
         .pass {
             background-image: url(icons/pass.png);
         }
+
+        #money {
+            display: none;
+        }
     </style>
     <style>
         .github-corner:hover .octo-arm {
@@ -164,10 +168,16 @@
         <li><a href="https://jasonbai008.github.io/news">https://jasonbai008.github.io/news</a></li>
     </ul>
     <ul class="tools">
-        <li>工资刺客【工具】</li>
+        <li ondblclick="showIt()">工资刺客【工具】</li>
         <li><a href="https://jasonbai008.github.io/salary">https://jasonbai008.github.io/salary</a></li>
         <li><a href="https://bai-salary.pages.dev">https://bai-salary.pages.dev</a></li>
         <li><a href="https://salary.jasonbai.dpdns.org">https://salary.jasonbai.dpdns.org</a></li>
+    </ul>
+    <ul class="tools" id="money">
+        <li>时间表【工具】</li>
+        <li><a href="https://jasonbai008.github.io/money">https://jasonbai008.github.io/money</a></li>
+        <li><a href="https://moneys.pages.dev">https://moneys.pages.dev</a></li>
+        <li><a href="https://moneys.jasonbai.dpdns.org">https://moneys.jasonbai.dpdns.org</a></li>
     </ul>
     <ul class="audio">
         <li>梁冬对话倪海厦【访谈】</li>
@@ -196,6 +206,17 @@
         <li><a href="https://nav.free2gpt.com/">https://nav.free2gpt.com/</a></li>
         <li><a href="https://chat.baidu.com/">https://chat.baidu.com/</a></li>
     </ul>
+    <script>
+        // 定义showIt函数，用于双击显示/隐藏时间表元素
+        function showIt() {
+            const moneyElement = document.getElementById('money');
+            if (moneyElement.style.display !== 'block') {
+                moneyElement.style.display = 'block';
+            } else {
+                moneyElement.style.display = 'none';
+            }
+        }        
+    </script>
 </body>
 
 </html>
